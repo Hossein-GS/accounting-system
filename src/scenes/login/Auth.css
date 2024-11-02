@@ -1,0 +1,192 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('./Dubai_Marina_Skyline.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: blur(4px); /* Adjust the blur intensity as desired */
+  }
+  
+  .auth-box {
+    /*background: rgb(238,174,202);*/
+    background: #F1F6F9;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-box h2 {
+    text-align: center;
+  }
+  
+  .auth-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-box form label {
+    margin-bottom: 10px;
+  }
+  
+  .auth-box form input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .auth-box form button {
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align form elements to the left */
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  .login-button {
+    background-color: #550A35 !important;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .icon-container {
+    background-color: #550A35;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+  }
+  
+  .icon {
+    color: white;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  input[type="number"] {
+    color: #550A35 !important;
+    border: none !important;
+    border-bottom: 2px solid #550A35 !important;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  html {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
+  /* CSS for mobile devices */
+
+/* Apply mobile styles when the screen width is less than or equal to 768px */
+@media (max-width: 768px) {
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url('./Dubai_Marina_Skyline.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        filter: blur(4px); /* Adjust the blur intensity as desired */
+      }
+    .auth-container {
+      height: 100%;
+      padding: 20px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      margin-top: 50%;
+    }
+  
+    .auth-box {
+      width: 80%;
+      box-shadow: none;
+      padding: 20px;
+      vertical-align: middle;
+
+    }
+  
+    .auth-box h2 {
+      font-size: 24px;
+    }
+  
+    .auth-box form {
+      align-items: center;
+    }
+  
+    .auth-box form label {
+      text-align: center;
+    }
+  
+    .auth-box form button {
+      width: 100%;
+    }
+  
+    .error-message {
+      font-size: 14px;
+    }
+  
+    form {
+      align-items: center;
+    }
+  
+    .input-container {
+      margin-bottom: 12px;
+    }
+  
+    .icon-container {
+      width: 30px;
+      height: 30px;
+      margin-right: 6px;
+    }
+  
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    input[type="number"] {
+      font-size: 14px;
+    }
+  }
